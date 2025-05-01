@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         token: ${{ secrets.BOT_PAT }}
     - name: Create wishlist bundles
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: 14.x
         cache: 'npm'
@@ -27,4 +27,4 @@ jobs:
         commit_message: rebuilt bundles
         push_options: '--force'
         commit_user_name: Little Light Bot
-        commit_user_email: jao+littlelightbotaccount@markezine.me
+        commit_user_email: bill0042@gmail.com
